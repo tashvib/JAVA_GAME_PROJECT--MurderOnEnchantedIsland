@@ -115,7 +115,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image hauntedLibrary = new ImageIcon("BobDiesInHauntedHouse.gif").getImage();
+                Image hauntedLibrary = new ImageIcon("res/BobDiesInHauntedHouse.gif").getImage();
                 g.drawImage(hauntedLibrary, 0, 0, 1400, getHeight() - 50, this);
                  
 
@@ -137,11 +137,11 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image hauntedLibrary = new ImageIcon("BobDiesInHauntedHouse.gif").getImage();
+                Image hauntedLibrary = new ImageIcon("res/BobDiesInHauntedHouse.gif").getImage();
                  //g.drawImage(hauntedLibrary, 0, 0, 1400, getHeight() - 50, this);
-                Image speech1 = new ImageIcon("Speech1.png").getImage();
+                Image speech1 = new ImageIcon("res/Speech1.png").getImage();
                 g.drawImage(speech1, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -160,9 +160,9 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image speech2 = new ImageIcon("Speech2.png").getImage();
+                Image speech2 = new ImageIcon("res/Speech2.png").getImage();
                 g.drawImage(speech2, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -182,9 +182,9 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image speech3 = new ImageIcon("Speech3.gif").getImage();
+                Image speech3 = new ImageIcon("res/Speech3.gif").getImage();
                 g.drawImage(speech3, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -204,9 +204,9 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image speech4 = new ImageIcon("Speech4.png").getImage();
+                Image speech4 = new ImageIcon("res/Speech4.png").getImage();
                 g.drawImage(speech4, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -224,9 +224,9 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image speech5= new ImageIcon("Speech5.png").getImage();
+                Image speech5= new ImageIcon("res/Speech5.png").getImage();
                 g.drawImage(speech5, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -242,7 +242,7 @@ public class Level1Panel extends JPanel {
                 // try {
                 //     // Load the sound clip from a file
                 //     Clip clip = AudioSystem.getClip();
-                //     clip.open(AudioSystem.getAudioInputStream(new File("Teleport.wav")));
+                //     clip.open(AudioSystem.getAudioInputStream(new File("res/Teleport.wav")));
     
                 //     // Play the sound clip
                 //     clip.start();
@@ -255,9 +255,9 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image speech6= new ImageIcon("Speech6.png").getImage();
+                Image speech6= new ImageIcon("res/Speech6.png").getImage();
                 g.drawImage(speech6, 0, 0, 1400, getHeight() - 50, this);
-                Image hauntedLibraryText = new ImageIcon("HauntedLibraryText.png").getImage();
+                Image hauntedLibraryText = new ImageIcon("res/HauntedLibraryText.png").getImage();
                 g.drawImage(hauntedLibraryText, 670, 200, 270, 100, this);
                  
             }
@@ -275,7 +275,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("wherearewe.png").getImage();
+                Image waw= new ImageIcon("res/wherearewe.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -292,7 +292,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("lookatthesign.png").getImage();
+                Image waw= new ImageIcon("res/lookatthesign.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -310,7 +310,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("webetterleave.png").getImage();
+                Image waw= new ImageIcon("res/webetterleave.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -328,7 +328,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("whataboutbob.png").getImage();
+                Image waw= new ImageIcon("res/whataboutbob.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -346,7 +346,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("ifwehavetime.png").getImage();
+                Image waw= new ImageIcon("res/ifwehavetime.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -363,7 +363,7 @@ public class Level1Panel extends JPanel {
             // paintComponent draws bg of hauntedlibrary
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image waw= new ImageIcon("search.png").getImage();
+                Image waw= new ImageIcon("res/search.png").getImage();
                 g.drawImage(waw, 0, 0, 1400, getHeight() - 50, this);
                  
             }
@@ -406,12 +406,12 @@ public class Level1Panel extends JPanel {
         //             // mainCL.show(Level1Panel.this, "panel2");
         //             introLevelCL.show(containerPanel, "cemeteryPanels");
         //         }
-        //         Image map = new ImageIcon("map2.png").getImage();
+        //         Image map = new ImageIcon("res/map2.png").getImage();
         //         g.drawImage(map, 0, 0, 1400, 900, this);
-        //         Image icon = new ImageIcon("girlIcon.png").getImage();
+        //         Image icon = new ImageIcon("res/girlIcon.png").getImage();
         //         g.drawImage(icon, x, y, 40, 40, this);
         //         if (drawCircle) {
-        //             Image glowingCircle = new ImageIcon("glowingCircle.png").getImage();
+        //             Image glowingCircle = new ImageIcon("res/glowingCircle.png").getImage();
         //             g.drawImage(glowingCircle, 630, 350, 40, 40, this);
         //         }
         //         drawCircle = !drawCircle;
@@ -476,7 +476,7 @@ public class Level1Panel extends JPanel {
                 //draws the "cemetery1.png" image
                 @Override
                 public void paintComponent(Graphics g) {
-                    Image cemetery1 = new ImageIcon("cemetery1.png").getImage();
+                    Image cemetery1 = new ImageIcon("res/cemetery1.png").getImage();
                     g.drawImage(cemetery1, 0, 0, 1400, 900, this);
                 }
             }
@@ -491,7 +491,7 @@ public class Level1Panel extends JPanel {
                 //draws the "Cemetery2.png" image
                 @Override
                 public void paintComponent(Graphics g) {
-                    Image cemetery2 = new ImageIcon("Cemetery2.png").getImage();
+                    Image cemetery2 = new ImageIcon("res/Cemetery2.png").getImage();
                     g.drawImage(cemetery2, 0, 0, 1400, 900, this);
                 }
             }
@@ -511,7 +511,7 @@ public class Level1Panel extends JPanel {
                 // this paintComponent method draws the next arrow button
                 public void paintComponent(Graphics g) {
                     super.paintComponent(g);
-                    Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                    Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                     g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
                 }
     
@@ -545,7 +545,7 @@ public class Level1Panel extends JPanel {
             JPanel panel = new JPanel();
             panel.setLayout(new FlowLayout(FlowLayout.RIGHT));
             panel.setBackground(new Color(0, 0, 0, 0));
-            Image img = Toolkit.getDefaultToolkit().getImage("QuitButton.png");
+            Image img = Toolkit.getDefaultToolkit().getImage("res/QuitButton.png");
             Image img2 = img.getScaledInstance(200, 150, Image.SCALE_SMOOTH);
             ImageIcon buttonIcon = new ImageIcon(img2);
             JLabel quit = new JLabel(buttonIcon);
@@ -566,7 +566,7 @@ public class Level1Panel extends JPanel {
             try {
                 // Load the sound clip from a file
                 Clip clip = AudioSystem.getClip();
-                clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
                 // Play the sound clip
                 clip.start();
@@ -606,7 +606,7 @@ public class Level1Panel extends JPanel {
             // this paintComponent method draws the next arrow button
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
             }
 
@@ -654,7 +654,7 @@ public class Level1Panel extends JPanel {
             northFiller.setBackground(new Color(0, 0, 0, 0));
             northFiller.setPreferredSize(new Dimension(1400, 277));
             northFiller.setLayout(new BorderLayout());
-            Image startButtonImage = new ImageIcon("StartButton.png").getImage().getScaledInstance(562 / 4, 234 / 4,
+            Image startButtonImage = new ImageIcon("res/StartButton.png").getImage().getScaledInstance(562 / 4, 234 / 4,
                     Image.SCALE_SMOOTH);
             // startButtonImage.setPreferredSize(new Dimension(562/4,234/4));
             ImageIcon startButtonIcon = new ImageIcon(startButtonImage);
@@ -682,7 +682,7 @@ public class Level1Panel extends JPanel {
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
                     // Play the sound clip
                     clip.start();
                 } catch (Exception ex) {
@@ -710,7 +710,7 @@ public class Level1Panel extends JPanel {
         // paintComponent paints the cemetery bg of the first challenge
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            Image cemetery = new ImageIcon("Level1CemeteryMaze.png").getImage();
+            Image cemetery = new ImageIcon("res/Level1CemeteryMaze.png").getImage();
             g.drawImage(cemetery, 0, 0, 1400, 850, this);
         }
 
@@ -951,7 +951,7 @@ public class Level1Panel extends JPanel {
             // when repaint is called the icons are shifted
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image rip = new ImageIcon("rip.png").getImage();
+                Image rip = new ImageIcon("res/rip.png").getImage();
                 count++;
                 for (int x = 0; x < mazeCols; x++) {
                     for (int y = 0; y < mazeRows; y++) {
@@ -983,10 +983,10 @@ public class Level1Panel extends JPanel {
                 // }
 
                 g.setColor(Color.RED);
-                Image girlIcon = new ImageIcon("girlIcon.png").getImage();
+                Image girlIcon = new ImageIcon("res/girlIcon.png").getImage();
                 g.drawImage(girlIcon, playerX * (1340 / mazeCols), playerY * (540 / mazeRows), 1340 / mazeCols, 540 / mazeRows, this);
 
-                Image    deadBobIcon = new ImageIcon("chaser.png").getImage();
+                Image    deadBobIcon = new ImageIcon("res/chaser.png").getImage();
                 g.drawImage(   deadBobIcon,    deadBobX * (1340 / mazeCols),    deadBobY * (540 / mazeRows), 1340 / mazeCols, 540 / mazeRows, this);
                 g.drawImage(   deadBobIcon,    deadBobX2 * (1340 / mazeCols),    deadBobY2 * (540 / mazeRows), 1340 / mazeCols, 540 / mazeRows, this);
                 g.drawImage(   deadBobIcon,    deadBobX3 * (1340 / mazeCols),    deadBobY3 * (540 / mazeRows), 1340 / mazeCols, 540 / mazeRows, this);
@@ -1036,7 +1036,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery.png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery.png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1052,7 +1052,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery2.png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery2.png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1068,7 +1068,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery3(1).png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery3(1).png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1085,7 +1085,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery5.png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery5.png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1101,7 +1101,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery6.gif").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery6.gif").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1117,7 +1117,7 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery7.png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery7.png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
             }
          }
@@ -1134,10 +1134,10 @@ public class Level1Panel extends JPanel {
             @Override
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image escapeC1 = new ImageIcon("EscapeCemetery7.png").getImage();
+                Image escapeC1 = new ImageIcon("res/EscapeCemetery7.png").getImage();
                 g.drawImage(escapeC1, 0, 0, 1400, 900, this);
                 
-                Image StartButton = new ImageIcon("StartButton.png").getImage();
+                Image StartButton = new ImageIcon("res/StartButton.png").getImage();
                 g.drawImage(StartButton, 1100, 700, 300, 130, this);
             }
             //determines what to do if mouse is clicked
@@ -1148,7 +1148,7 @@ public class Level1Panel extends JPanel {
                     try {
                         // Load the sound clip from a file
                         Clip clip = AudioSystem.getClip();
-                        clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                        clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
     
                         // Play the sound clip
                         clip.start();
@@ -1186,7 +1186,7 @@ public class Level1Panel extends JPanel {
             // this paintComponent method draws the next arrow button
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
             }
 
@@ -1215,7 +1215,7 @@ public class Level1Panel extends JPanel {
             JPanel panel = new JPanel();
             panel.setLayout(new FlowLayout(FlowLayout.RIGHT));
             panel.setBackground(new Color(0, 0, 0, 0));
-            Image img = Toolkit.getDefaultToolkit().getImage("QuitButton.png");
+            Image img = Toolkit.getDefaultToolkit().getImage("res/QuitButton.png");
             Image img2 = img.getScaledInstance(200, 150, Image.SCALE_SMOOTH);
             ImageIcon buttonIcon = new ImageIcon(img2);
             JLabel quit = new JLabel(buttonIcon);
@@ -1353,7 +1353,7 @@ public class Level1Panel extends JPanel {
                     //         try {
                     //         // Load the sound clip from a file
                     //         Clip clip = AudioSystem.getClip();
-                    //         clip.open(AudioSystem.getAudioInputStream(new File("playerGrunt.wav")));
+                    //         clip.open(AudioSystem.getAudioInputStream(new File("res/playerGrunt.wav")));
         
                     //         // Play the sound clip
                     //         clip.start();
@@ -1386,7 +1386,7 @@ public class Level1Panel extends JPanel {
                     // try {
                     //     // Load the sound clip from a file
                     //     Clip clip = AudioSystem.getClip();
-                    //     clip.open(AudioSystem.getAudioInputStream(new File("oof.wav")));
+                    //     clip.open(AudioSystem.getAudioInputStream(new File("res/oof.wav")));
 
                     //     // Play the sound clip
                     //     clip.start();
@@ -1403,7 +1403,7 @@ public class Level1Panel extends JPanel {
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("girlScream.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/girlScream.wav")));
 
                     // Play the sound clip
                     clip.start();
@@ -1440,7 +1440,7 @@ class Heart {
     Image heart;
     //constructs the random position of the heart
     public Heart(){
-        heart = new ImageIcon("powerUpHeart.png").getImage();
+        heart = new ImageIcon("res/powerUpHeart.png").getImage();
         xPosPowerUp = (int)(Math.random()*1000+100);
         yPosPowerUp = (int)(Math.random()*500+100);
     }
@@ -1457,7 +1457,7 @@ class Heart {
         
     }
     //  public Heart(Graphics g){
-    //     Image heart = new ImageIcon("powerUpHeart.png").getImage();
+    //     Image heart = new ImageIcon("res/powerUpHeart.png").getImage();
     //     if(powerUpCount==0){
     //         xPosPowerUp = (int)(Math.random()*1000+100);
     //         yPosPowerUp = (int)(Math.random()*500+100);
@@ -1494,8 +1494,8 @@ class Heart {
         // paintcomponent draws the visual components of the challenge
         public void paintComponent(Graphics g){
             mainCL.show(Level1Panel.this, "panel6");
-            Image forestEnchanted = new ImageIcon("ForestLevel1Bg.png").getImage();
-            Image pressSpaceToAttack = new ImageIcon("PressSpaceToAttack.png").getImage();
+            Image forestEnchanted = new ImageIcon("res/ForestLevel1Bg.png").getImage();
+            Image pressSpaceToAttack = new ImageIcon("res/PressSpaceToAttack.png").getImage();
             g.drawImage(forestEnchanted, 0, 0, 1400, 870, this);
             
             if(drawPressSpaceToAttack) g.drawImage(pressSpaceToAttack, 0,0,300, 100, this);
@@ -1518,14 +1518,14 @@ class Heart {
                 Image healthbar; 
                 Image girlImage;
 
-                healthbar = new ImageIcon("0" + (int)(7-girl.health -1)+ "_healthbar.png").getImage();
+                healthbar = new ImageIcon("res/0" + (int)(7-girl.health -1)+ "_healthbar.png").getImage();
                 g.drawImage(healthbar, 1100, 0, 300, 100, this);
                 
 
-                Image swordSelectedImg = new ImageIcon("swordSelectedImg.png").getImage();
-                Image earthSwordSelectedImg = new ImageIcon("earthSwordSelectedImg.png").getImage();
-                Image flameSwordSelectedImg = new ImageIcon("flameSwordSelectedImg.png").getImage();
-                Image redSwordSelectedImg = new ImageIcon("redSwordSelectedImg.png").getImage();
+                Image swordSelectedImg = new ImageIcon("res/swordSelectedImg.png").getImage();
+                Image earthSwordSelectedImg = new ImageIcon("res/earthSwordSelectedImg.png").getImage();
+                Image flameSwordSelectedImg = new ImageIcon("res/flameSwordSelectedImg.png").getImage();
+                Image redSwordSelectedImg = new ImageIcon("res/redSwordSelectedImg.png").getImage();
                 if(!earthSwordSelected && !redSwordSelected && !flameSwordSelected) g.drawImage(swordSelectedImg, 1150, 100, 250, 250, this); 
                 if(earthSwordSelected && !redSwordSelected && !flameSwordSelected) g.drawImage(earthSwordSelectedImg, 1150, 100, 250, 250, this); 
                 if(!earthSwordSelected && redSwordSelected && !flameSwordSelected) g.drawImage(redSwordSelectedImg, 1150, 100, 250, 250, this); 
@@ -1533,19 +1533,19 @@ class Heart {
                 //if the space key is pressed draw the cast sequence 
                 if(spacePressed) {
                     
-                    if(earthSwordSelected) girlImage = new ImageIcon("cast"+girl.count+"EarthSword.png").getImage();
-                    else if(redSwordSelected) girlImage = new ImageIcon("cast"+girl.count+"RedSword.png").getImage();
-                    else if(flameSwordSelected) girlImage = new ImageIcon("cast"+girl.count+"FlameSword.png").getImage();
-                    else girlImage = new ImageIcon("cast"+girl.count+".png").getImage();
+                    if(earthSwordSelected) girlImage = new ImageIcon("res/cast"+girl.count+"EarthSword.png").getImage();
+                    else if(redSwordSelected) girlImage = new ImageIcon("res/cast"+girl.count+"RedSword.png").getImage();
+                    else if(flameSwordSelected) girlImage = new ImageIcon("res/cast"+girl.count+"FlameSword.png").getImage();
+                    else girlImage = new ImageIcon("res/cast"+girl.count+".png").getImage();
                     if(girl.count==6)spacePressed=false;
                 }
 
                 //if the girl is not stationary (i.e. the user pressed the arrow keys so she should be walking)
                 else if(!stationary){ 
-                    girlImage = new ImageIcon("0"+girl.count+"_Walk.png").getImage();
+                    girlImage = new ImageIcon("res/0"+girl.count+"_Walk.png").getImage();
                     stationary=true;
                 }
-                else  girlImage = new ImageIcon("00_Walk.png").getImage();
+                else  girlImage = new ImageIcon("res/00_Walk.png").getImage();
                 //g.drawImage(girlImage, girl.X, girl.Y, 300, 300, this);
       
                 if (girlFacingRight){
@@ -1563,11 +1563,11 @@ class Heart {
 
                 if(attacker1.health>0){ //if the attacker is still alive
                     //if the "attackerAttack" of the attacker1 obj is true then draw the attack sequence 
-                    if(attacker1.attackerAttack) attackImage = new ImageIcon("0" + attacker1.count+ "_Warrior_1.png").getImage();
+                    if(attacker1.attackerAttack) attackImage = new ImageIcon("res/0" + attacker1.count+ "_Warrior_1.png").getImage();
                     //otherwise draw the running sequence 
-                    else attackImage = new ImageIcon("0" + attacker1.count+ "_WarriorRun.png").getImage();
+                    else attackImage = new ImageIcon("res/0" + attacker1.count+ "_WarriorRun.png").getImage();
 
-                    Image healthImage = new ImageIcon("0" + (int)(7-attacker1.health -1)+ "_healthbar2.png").getImage();
+                    Image healthImage = new ImageIcon("res/0" + (int)(7-attacker1.health -1)+ "_healthbar2.png").getImage();
                     g.drawImage(healthImage, attacker1.X+10, attacker1.Y-10, iconWidth-40, iconHeight-70, this);
 
                     if (attacker1.faceLeft){
@@ -1578,7 +1578,7 @@ class Heart {
                     g.drawImage(attackImage, attacker1.X, attacker1.Y, iconWidth, iconHeight, this);
                 }
                 else {
-                    Image bloodSpatter = new ImageIcon("bloodspatter.png").getImage();
+                    Image bloodSpatter = new ImageIcon("res/bloodspatter.png").getImage();
                     if(bloodSpatterCounter%2==0 && numTimesBloodSpatter<=3) {
                         numTimesBloodSpatter++;
                         g.drawImage(bloodSpatter, attacker1.X, attacker1.Y, iconWidth, iconHeight, this);
@@ -1589,11 +1589,11 @@ class Heart {
 
                 if(attacker2.health>0){
                     //if the "attackerAttack" of the attacker2 obj is true then draw the attack sequence 
-                    if(attacker2.attackerAttack) attackImage = new ImageIcon("0" + attacker2.count+ "_Berserk_1.png").getImage();
+                    if(attacker2.attackerAttack) attackImage = new ImageIcon("res/0" + attacker2.count+ "_Berserk_1.png").getImage();
                     //otherwise draw the running sequence 
-                    else attackImage = new ImageIcon("0" + attacker2.count+ "_OgreRun.png").getImage();
+                    else attackImage = new ImageIcon("res/0" + attacker2.count+ "_OgreRun.png").getImage();
 
-                    Image healthImage = new ImageIcon("0" + (int)(7-attacker2.health -1)+ "_healthbar2.png").getImage();
+                    Image healthImage = new ImageIcon("res/0" + (int)(7-attacker2.health -1)+ "_healthbar2.png").getImage();
                     g.drawImage(healthImage, attacker2.X+10, attacker2.Y-10, iconWidth-40, iconHeight-70, this);
 
                     if (attacker2.faceLeft){
@@ -1605,7 +1605,7 @@ class Heart {
                         g.drawImage(attackImage, attacker2.X, attacker2.Y, iconWidth, iconHeight, this);
                 }
                 else{
-                    Image bloodSpatter = new ImageIcon("bloodspatter.png").getImage();
+                    Image bloodSpatter = new ImageIcon("res/bloodspatter.png").getImage();
                     if(bloodSpatterCounter2%2==0 && numTimesBloodSpatter2<=3) {
                         numTimesBloodSpatter2++;
                         g.drawImage(bloodSpatter, attacker2.X, attacker2.Y, iconWidth, iconHeight, this);
@@ -1618,13 +1618,13 @@ class Heart {
                 if(attacker3.health>0){
 
 
-                    Image healthImage = new ImageIcon("0" + (int)(7-attacker3.health -1)+ "_healthbar2.png").getImage();
+                    Image healthImage = new ImageIcon("res/0" + (int)(7-attacker3.health -1)+ "_healthbar2.png").getImage();
                     g.drawImage(healthImage, attacker3.X+10, attacker3.Y-10, iconWidth-40, iconHeight-70, this);
 
                     //if the "attackerAttack" of the attacker3 obj is true then draw the attack sequence 
-                    if(attacker3.attackerAttack) attackImage = new ImageIcon("0" + attacker3.count+ "_Shaman_1.png").getImage();
+                    if(attacker3.attackerAttack) attackImage = new ImageIcon("res/0" + attacker3.count+ "_Shaman_1.png").getImage();
                     //otherwise draw the running sequence 
-                    else attackImage = new ImageIcon("0" + attacker3.count+ "_ShamanRun.png").getImage();
+                    else attackImage = new ImageIcon("res/0" + attacker3.count+ "_ShamanRun.png").getImage();
                     if (attacker3.faceLeft){
                         BufferedImage attackFlippedImage = flipImage(attackImage);
                         g.drawImage(attackFlippedImage, attacker3.X, attacker3.Y, iconWidth, iconHeight, this);
@@ -1634,7 +1634,7 @@ class Heart {
                     }
                 }
                 else {
-                    Image bloodSpatter = new ImageIcon("bloodspatter.png").getImage();
+                    Image bloodSpatter = new ImageIcon("res/bloodspatter.png").getImage();
                     if(bloodSpatterCounter%2==0 && numTimesBloodSpatter3<=3) {
                         numTimesBloodSpatter3++;
                         g.drawImage(bloodSpatter, attacker3.X, attacker3.Y, iconWidth, iconHeight, this);
@@ -1759,9 +1759,9 @@ class Heart {
 
         // determines what to do if the next button is clicked
         public void paintComponent(Graphics g){
-            Image congrats = new ImageIcon("CongratsLevel1.png").getImage();
+            Image congrats = new ImageIcon("res/CongratsLevel1.png").getImage();
             g.drawImage(congrats, 0, 0, 1400, 900, this);
-            Image proceed = new ImageIcon("Proceed.png").getImage();
+            Image proceed = new ImageIcon("res/Proceed.png").getImage();
             g.drawImage(proceed, 1100, 600, 300, 100, this);
 
         }
@@ -1797,9 +1797,9 @@ class Heart {
         // paintcomponent draws all the visual components of deathscreen
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            Image bg = new ImageIcon("red.gif").getImage();
+            Image bg = new ImageIcon("res/red.gif").getImage();
             g.drawImage(bg, 0, 0, 1400, 900, this);
-            Image youdied = new ImageIcon("YouDied.png").getImage();
+            Image youdied = new ImageIcon("res/YouDied.png").getImage();
             g.drawImage(youdied, 0, 0, 1400, 900, this);
         }
         // mousePRessed determines what to do if mouse is pressed
@@ -1847,7 +1847,7 @@ class Heart {
         try {
             // Load the sound clip from a file
             Clip clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+            clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
             // Play the sound clip
             clip.start();

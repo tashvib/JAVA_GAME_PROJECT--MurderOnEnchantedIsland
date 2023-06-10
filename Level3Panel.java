@@ -81,9 +81,9 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image uhoh = new ImageIcon("UhOh.png").getImage();
+                Image uhoh = new ImageIcon("res/UhOh.png").getImage();
                 g.drawImage(uhoh, 0,0,getWidth(), getHeight(), this);
-                Image shocked = new ImageIcon("Shocked.gif").getImage();
+                Image shocked = new ImageIcon("res/Shocked.gif").getImage();
                 //g.drawImage(shocked, 0,580,498, 263, this);
                 requestFocus();
             }
@@ -140,18 +140,18 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("platformerBg1.png").getImage();
+                Image story = new ImageIcon("res/platformerBg1.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
-                Image open = new ImageIcon("OpenChest.png").getImage();
-                Image treasure1 = new ImageIcon("treasure1v2.png").getImage();
+                Image open = new ImageIcon("res/OpenChest.png").getImage();
+                Image treasure1 = new ImageIcon("res/treasure1v2.png").getImage();
                 if (!playGif) {
                     g.drawImage(treasure1, 300, 100, 800, 800, this);
                     g.drawImage(open, 550, 423, 300, 100, this);
                 }
-                Image treasureGIF = new ImageIcon("treasure.gif").getImage();
-                Image blankWood = new ImageIcon("blankWood.png").getImage();
-                Image unequipped = new ImageIcon("unequipped.png").getImage();
-                Image equipped = new ImageIcon("equipped.png").getImage();
+                Image treasureGIF = new ImageIcon("res/treasure.gif").getImage();
+                Image blankWood = new ImageIcon("res/blankWood.png").getImage();
+                Image unequipped = new ImageIcon("res/unequipped.png").getImage();
+                Image equipped = new ImageIcon("res/equipped.png").getImage();
                 if (playGif) {
                     g.drawImage(treasureGIF, 300, 100, 800, 800, this);
                 }
@@ -217,7 +217,7 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("story1.png").getImage();
+                Image story = new ImageIcon("res/story1.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
             }
         }
@@ -237,7 +237,7 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("story2.png").getImage();
+                Image story = new ImageIcon("res/story2.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
             }
         }
@@ -262,9 +262,9 @@ class Level3Panel extends JPanel implements MouseListener {
                 super.paintComponent(g);
                 if (count > 0)
                     count--;
-                Image story = new ImageIcon("story3.png").getImage();
+                Image story = new ImageIcon("res/story3.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
-                Image demonTransformation = new ImageIcon("0" + count + "_Attack_4.png").getImage();
+                Image demonTransformation = new ImageIcon("res/0" + count + "_Attack_4.png").getImage();
                 g.drawImage(demonTransformation, 730, 210, 386 + 100, 315 + 100, this);
             }
 
@@ -290,7 +290,7 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("story4.png").getImage();
+                Image story = new ImageIcon("res/story4.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
             }
         }
@@ -311,7 +311,7 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("story5.png").getImage();
+                Image story = new ImageIcon("res/story5.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
             }
         }
@@ -333,9 +333,9 @@ class Level3Panel extends JPanel implements MouseListener {
             protected void paintComponent(Graphics g) {
                 // TODO Auto-generated method stub
                 super.paintComponent(g);
-                Image story = new ImageIcon("story7.png").getImage();
+                Image story = new ImageIcon("res/story7.png").getImage();
                 g.drawImage(story, 0, 0, 1400, 860, this);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 760, 150, 100, this);
             }
 
@@ -379,7 +379,7 @@ class Level3Panel extends JPanel implements MouseListener {
             // this paintComponent method draws the next arrow button
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
             }
 
@@ -544,7 +544,7 @@ for(int i = 0; i<heartArr.size(); i++){
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("girlScream.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/girlScream.wav")));
 
                     // Play the sound clip
                     clip.start();
@@ -612,7 +612,7 @@ for(int i = 0; i<heartArr.size(); i++){
             Image heart;
             //constructs the random position of the heart
             public Heart(){
-                heart = new ImageIcon("powerUpHeart.png").getImage();
+                heart = new ImageIcon("res/powerUpHeart.png").getImage();
                 xPosPowerUp = (int)(Math.random()*1000+100);
                 yPosPowerUp = (int)(Math.random()*500+100);
             }
@@ -655,17 +655,17 @@ for(int i = 0; i<heartArr.size(); i++){
         public void paintComponent(Graphics g) {
             // level3mainCL.show(Level3Panel.this, "panel6");
             super.paintComponent(g);
-            Image bgBothDark = new ImageIcon("story8.png").getImage();
-            Image bgRightBright = new ImageIcon("RightBright.png").getImage();
-            Image rightCloseLeftOpen = new ImageIcon("RightCloseLeftOpen.png").getImage();
-            Image rightOpenLeftClose = new ImageIcon("RightOpenLeftClose.png").getImage();
-            Image rightCloseLeftClose = new ImageIcon("RightCloseLeftClose.png").getImage();
-            Image rightOpenLeftOpen = new ImageIcon("RightOpenLeftOpen.png").getImage();
-            Image bgLeftBright = new ImageIcon("LeftBright.png").getImage();
-            Image bgBothBright = new ImageIcon("BothBright.png").getImage();
-            Image half = new ImageIcon("HalfBoardedBg.png").getImage();
-            Image full = new ImageIcon("FullBoardedBg.png").getImage();
-Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
+            Image bgBothDark = new ImageIcon("res/story8.png").getImage();
+            Image bgRightBright = new ImageIcon("res/RightBright.png").getImage();
+            Image rightCloseLeftOpen = new ImageIcon("res/RightCloseLeftOpen.png").getImage();
+            Image rightOpenLeftClose = new ImageIcon("res/RightOpenLeftClose.png").getImage();
+            Image rightCloseLeftClose = new ImageIcon("res/RightCloseLeftClose.png").getImage();
+            Image rightOpenLeftOpen = new ImageIcon("res/RightOpenLeftOpen.png").getImage();
+            Image bgLeftBright = new ImageIcon("res/LeftBright.png").getImage();
+            Image bgBothBright = new ImageIcon("res/BothBright.png").getImage();
+            Image half = new ImageIcon("res/HalfBoardedBg.png").getImage();
+            Image full = new ImageIcon("res/FullBoardedBg.png").getImage();
+Image blankMiddleToCoverOld = new ImageIcon("res/BlankBackground.png").getImage();
             if (changeRight && !changeLeft){
                 g.drawImage(bgRightBright, 0, 0, 1400, 870, this);
                 g.drawImage(blankMiddleToCoverOld, 0, 0, 1400, 860, this);
@@ -699,20 +699,20 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 Image healthbar;
                 Image girlImage;
 
-                healthbar = new ImageIcon("0" + (int) (7 - girl.health - 1) + "_healthbar.png").getImage();
+                healthbar = new ImageIcon("res/0" + (int) (7 - girl.health - 1) + "_healthbar.png").getImage();
                 g.drawImage(healthbar, 1100, 0, 300, 100, this);
 
                 // if the girl is not stationary (i.e. the user pressed the arrow keys so she
                 // should be walking)
                 if (!stationary) {
-                    girlImage = new ImageIcon("0" + girl.attackingCount + "_Walk.png").getImage();
+                    girlImage = new ImageIcon("res/0" + girl.attackingCount + "_Walk.png").getImage();
                     stationary = true;
                 } else
-                    girlImage = new ImageIcon("00_Walk.png").getImage();
+                    girlImage = new ImageIcon("res/00_Walk.png").getImage();
                 // g.drawImage(girlImage, girl.X, girl.Y, 300, 300, this);
 
                 if (spacePressed) {
-                    girlImage = new ImageIcon("cast" + girl.attackingCount + ".png").getImage();
+                    girlImage = new ImageIcon("res/cast" + girl.attackingCount + ".png").getImage();
                     if (girl.attackingCount == 6)
                         spacePressed = false;
                 }
@@ -728,11 +728,11 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 for (int i = 0; i < attackers.size(); i++) {
                     if (attackers.get(i).health > 0) {
                         if (attackers.get(i).attackerAttack)
-                            attackImage = new ImageIcon("0" + attackers.get(i).attackingCount + "_Attack_3.png")
+                            attackImage = new ImageIcon("res/0" + attackers.get(i).attackingCount + "_Attack_3.png")
                                     .getImage();
                         // otherwise draw the running sequence
                         else
-                            attackImage = new ImageIcon("0" + attackers.get(i).runningCount + "_GhostRun.png")
+                            attackImage = new ImageIcon("res/0" + attackers.get(i).runningCount + "_GhostRun.png")
                                     .getImage();
 
                         Image healthImage = new ImageIcon(
@@ -774,7 +774,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
             }
             requestFocus();
 
-            // Image heart = new ImageIcon("powerUpHeart.png").getImage();
+            // Image heart = new ImageIcon("res/powerUpHeart.png").getImage();
             // if(powerUpCount==0){
             //     xPosPowerUp = (int)(Math.random()*1000+100);
             //     yPosPowerUp = (int)(Math.random()*500+100);
@@ -791,11 +791,11 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     if (attackers.get(k).health > 0)
                         everyAttackerIsDead++;
                 }
-                Image howDare = new ImageIcon("HowDareYou.png").getImage();
+                Image howDare = new ImageIcon("res/HowDareYou.png").getImage();
                 if (everyAttackerIsDead == 0) {
 
                     Level3Panel.level3mainCL.show(Level3Panel.level3MainPanel, "part2");
-                    // Image unleash = new ImageIcon("unleash.png").getImage();
+                    // Image unleash = new ImageIcon("res/unleash.png").getImage();
                     // g.drawImage(unleash, 0, 0, 1400, 860, this);
                 }
             }
@@ -885,14 +885,14 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image bg = new ImageIcon("unleash.png").getImage();
-                // else bg = new ImageIcon("EmptyBattlefield.png").getImage();
-                Image rightCloseLeftClose = new ImageIcon("RightCloseLeftClose.png").getImage();
-                Image blankMiddleToCoverOld = new ImageIcon("OtherBlankBackground.png").getImage();
+                Image bg = new ImageIcon("res/unleash.png").getImage();
+                // else bg = new ImageIcon("res/EmptyBattlefield.png").getImage();
+                Image rightCloseLeftClose = new ImageIcon("res/RightCloseLeftClose.png").getImage();
+                Image blankMiddleToCoverOld = new ImageIcon("res/OtherBlankBackground.png").getImage();
                 g.drawImage(bg, 0, 0, 1400, 860, this);
                g.drawImage(blankMiddleToCoverOld, 0, 0, 1400, 860, this);
                 g.drawImage(rightCloseLeftClose, 500, 400, (int)(616/1.5), (int)(405/1.5), this);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 760, 150, 100, this);
             }
 
@@ -1169,7 +1169,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                         // try {
                         // // Load the sound clip from a file
                         // Clip clip = AudioSystem.getClip();
-                        // clip.open(AudioSystem.getAudioInputStream(new File("oof.wav")));
+                        // clip.open(AudioSystem.getAudioInputStream(new File("res/oof.wav")));
 
                         // // Play the sound clip
                         // clip.start();
@@ -1186,7 +1186,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     try {
                         // Load the sound clip from a file
                         Clip clip = AudioSystem.getClip();
-                        clip.open(AudioSystem.getAudioInputStream(new File("girlScream.wav")));
+                        clip.open(AudioSystem.getAudioInputStream(new File("res/girlScream.wav")));
 
                         // Play the sound clip
                         clip.start();
@@ -1246,7 +1246,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 // draw method acts as a paint componet
                 // draws the actions of the dagger based on what the user does
                 public void draw(Graphics g) {
-                    Image dagger = new ImageIcon("dagger.png").getImage();
+                    Image dagger = new ImageIcon("res/dagger.png").getImage();
                     if (throwDagger) {
                         timesDaggerBeenThrown++;
                         if (timesDaggerBeenThrown == 1) {
@@ -1279,7 +1279,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     }
                 }
                 public void drawAttackerDagger(Graphics g, int addX, int addY, String sickleImgTitle){
-                    Image dagger = new ImageIcon("sickle.gif").getImage();
+                    Image dagger = new ImageIcon("res/sickle.gif").getImage();
                     //if (throwDagger) {
                         System.out.println("drawingDagger");
                         timesDaggerBeenThrown++;
@@ -1338,21 +1338,21 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
 
             // paintcomponent draws the visual components of the challenge
             public void paintComponent(Graphics g) {
-                // Image forestEnchanted = new ImageIcon("ForestLevel1Bg.png").getImage();
-                Image pressSpaceToAttack = new ImageIcon("PressSpaceToAttack.png").getImage();
+                // Image forestEnchanted = new ImageIcon("res/ForestLevel1Bg.png").getImage();
+                Image pressSpaceToAttack = new ImageIcon("res/PressSpaceToAttack.png").getImage();
                 // g.drawImage(forestEnchanted, 0, 0, 1400, 870, this);
 
-                Image bg = new ImageIcon("EmptyBattlefield.png").getImage();
+                Image bg = new ImageIcon("res/EmptyBattlefield.png").getImage();
                 g.drawImage(bg, 0, 0, 1400, 860, this);
-                Image rightCloseLeftClose = new ImageIcon("RightCloseLeftClose.png").getImage();
-                Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
+                Image rightCloseLeftClose = new ImageIcon("res/RightCloseLeftClose.png").getImage();
+                Image blankMiddleToCoverOld = new ImageIcon("res/BlankBackground.png").getImage();
                 g.drawImage(blankMiddleToCoverOld, 0, 0, 1400, 860, this);
                 g.drawImage(rightCloseLeftClose, 500, 400, (int)(616/1.5), (int)(405/1.5), this);
-                Image toolbar = new ImageIcon("toolbar.png").getImage();
+                Image toolbar = new ImageIcon("res/toolbar.png").getImage();
                 g.drawImage(toolbar, 400, 750, 90 * 7 + 30, 100, this);
-                Image whipIcon = new ImageIcon("whipIcon.png").getImage();
+                Image whipIcon = new ImageIcon("res/whipIcon.png").getImage();
                 g.drawImage(whipIcon, 430, 760, 70, 70, this);
-                Image bombIcon = new ImageIcon("bombIcon.png").getImage();
+                Image bombIcon = new ImageIcon("res/bombIcon.png").getImage();
                 if (bomb1.timesBombBeenDropped <= 0) {
                     g.drawImage(bombIcon, 520, 760, 70, 70, this);
                 }
@@ -1360,15 +1360,15 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     g.drawImage(bombIcon, 610, 760, 70, 70, this);
                 if (bomb3.timesBombBeenDropped <= 0)
                     g.drawImage(bombIcon, 700, 760, 70, 70, this);
-                Image daggerIcon = new ImageIcon("daggerIcon.png").getImage();
+                Image daggerIcon = new ImageIcon("res/daggerIcon.png").getImage();
                 g.drawImage(daggerIcon, 790, 760, 70, 70, this);
-                Image potionIcon = new ImageIcon("potionIcon.png").getImage();
+                Image potionIcon = new ImageIcon("res/potionIcon.png").getImage();
                 if (!potion1HasBeenDranken)
                     g.drawImage(potionIcon, 880, 770, 60, 60, this);
                 if (!potion2HasBeenDranken)
                     g.drawImage(potionIcon, 970, 770, 60, 60, this);
 
-                Image glowBox = new ImageIcon("RedGlowingBox.png").getImage();
+                Image glowBox = new ImageIcon("res/RedGlowingBox.png").getImage();
                 if (shiftBoxRight && xPosGlowBox <= 865) {
                     xPosGlowBox += 90;
                     shiftBoxRight = false;
@@ -1422,13 +1422,13 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                         if(sickleNum<=3) sickleNum++;
                         else sickleNum=0;
                        // daggersForAttacker.get(x).drawAttackerDagger(g, 20, -100);
-                        daggersForAttacker.get(x).drawAttackerDagger(g, 20, 0, ("sickle" + sickleNum + ".png"));
+                        daggersForAttacker.get(x).drawAttackerDagger(g, 20, 0, ("res/sickle" + sickleNum + ".png"));
                         // daggersForAttacker.get(x).drawAttackerDagger(g, 20, 100);
                     }
                 }
                 for (int x = 0; x < daggersForAttacker2.size(); x++) {
                     if (daggersForAttacker2.get(x).alive){
-                        daggersForAttacker2.get(x).drawAttackerDagger(g, 20, -10, ("sickle" + sickleNum + ".png"));
+                        daggersForAttacker2.get(x).drawAttackerDagger(g, 20, -10, ("res/sickle" + sickleNum + ".png"));
                         //daggersForAttacker.get(x).drawAttackerDagger(g, 20, 0);
                         // daggersForAttacker.get(x).drawAttackerDagger(g, 20, 100);
                     }
@@ -1437,7 +1437,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     if (daggersForAttacker3.get(x).alive){
                         //daggersForAttacker2.get(x).drawAttackerDagger(g, 20, -10);
                         //daggersForAttacker.get(x).drawAttackerDagger(g, 20, 0);
-                        daggersForAttacker3.get(x).drawAttackerDagger(g, 20, 10, ("sickle" + sickleNum + ".png"));
+                        daggersForAttacker3.get(x).drawAttackerDagger(g, 20, 10, ("res/sickle" + sickleNum + ".png"));
                     }
                 }
                 // if(throwDagger){
@@ -1459,13 +1459,13 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 // }
 
                 if (bomb1.detonate) {
-                    Image bombImg = new ImageIcon("bombExplosion" + bomb1.count + ".png").getImage();
+                    Image bombImg = new ImageIcon("res/bombExplosion" + bomb1.count + ".png").getImage();
                     g.drawImage(bombImg, bomb1.xPos, bomb1.yPos, 120, 80, this);
                 } else if (bomb1.dropBomb == true && bomb1.count == 0) {
                     bomb1.timesBombBeenDropped++;
                     int yOffset = 90;
                     int xOffset = 40;
-                    Image bombImg = new ImageIcon("bomb.png").getImage();
+                    Image bombImg = new ImageIcon("res/bomb.png").getImage();
                     if (bomb1.timesBombBeenDropped == 1) {
                         bomb1.xPos = girl.X + xOffset;
                         bomb1.yPos = girl.Y + yOffset;
@@ -1473,13 +1473,13 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     g.drawImage(bombImg, bomb1.xPos, bomb1.yPos, 120, 80, this);
                 }
                 if (bomb2.detonate) {
-                    Image bombImg = new ImageIcon("bombExplosion" + bomb2.count + ".png").getImage();
+                    Image bombImg = new ImageIcon("res/bombExplosion" + bomb2.count + ".png").getImage();
                     g.drawImage(bombImg, bomb2.xPos, bomb2.yPos, 120, 80, this);
                 } else if (bomb2.dropBomb == true && bomb2.count == 0) {
                     bomb2.timesBombBeenDropped++;
                     int yOffset = 90;
                     int xOffset = 40;
-                    Image bombImg = new ImageIcon("bomb.png").getImage();
+                    Image bombImg = new ImageIcon("res/bomb.png").getImage();
                     if (bomb2.timesBombBeenDropped == 1) {
                         bomb2.xPos = girl.X + xOffset;
                         bomb2.yPos = girl.Y + yOffset;
@@ -1487,13 +1487,13 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     g.drawImage(bombImg, bomb2.xPos, bomb2.yPos, 120, 80, this);
                 }
                 if (bomb3.detonate) {
-                    Image bombImg = new ImageIcon("bombExplosion" + bomb3.count + ".png").getImage();
+                    Image bombImg = new ImageIcon("res/bombExplosion" + bomb3.count + ".png").getImage();
                     g.drawImage(bombImg, bomb3.xPos, bomb3.yPos, 120, 80, this);
                 } else if (bomb3.dropBomb == true && bomb3.count == 0) {
                     bomb3.timesBombBeenDropped++;
                     int yOffset = 90;
                     int xOffset = 40;
-                    Image bombImg = new ImageIcon("bomb.png").getImage();
+                    Image bombImg = new ImageIcon("res/bomb.png").getImage();
                     if (bomb3.timesBombBeenDropped == 1) {
                         bomb3.xPos = girl.X + xOffset;
                         bomb3.yPos = girl.Y + yOffset;
@@ -1502,9 +1502,9 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 }
 
                 if (bomb1.selected || bomb2.selected || bomb3.selected) {
-                    Image pressSToDrop = new ImageIcon("PressSToDrop.png").getImage();
+                    Image pressSToDrop = new ImageIcon("res/PressSToDrop.png").getImage();
 
-                    Image detonate = new ImageIcon("Detonate.png").getImage();
+                    Image detonate = new ImageIcon("res/Detonate.png").getImage();
                     if (bomb1.selected && bomb1.timesBombBeenDropped > 0) {
                         g.drawImage(detonate, 500, 730, 90, 40, this);
                     } else if (bomb2.selected && bomb2.timesBombBeenDropped > 0) {
@@ -1528,31 +1528,31 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     Image healthbar;
                     Image girlImage;
 
-                    healthbar = new ImageIcon("0" + (int) (7 - girl.health - 1) + "_healthbar.png").getImage();
+                    healthbar = new ImageIcon("res/0" + (int) (7 - girl.health - 1) + "_healthbar.png").getImage();
                     g.drawImage(healthbar, 1100, 0, 300, 100, this);
                     if (spacePressed) {
 
                         if (whipSelected) {
-                            girlImage = new ImageIcon("0" + girl.count + "_whipAttack_2.png").getImage();
+                            girlImage = new ImageIcon("res/0" + girl.count + "_whipAttack_2.png").getImage();
                             girlImage = flipImage(girlImage);
                         } else {
-                            girlImage = new ImageIcon("cast" + girl.count + ".png").getImage();
+                            girlImage = new ImageIcon("res/cast" + girl.count + ".png").getImage();
                         }
 
                         if (girl.count == 6)
                             spacePressed = false;
                     } else if (playDaggerCast) {
-                        girlImage = new ImageIcon("cast" + girl.count + "Dagger.png").getImage();
+                        girlImage = new ImageIcon("res/cast" + girl.count + "Dagger.png").getImage();
                         if (girl.count >= 6)
                             playDaggerCast = false;
                     }
                     // if the girl is not stationary (i.e. the user pressed the arrow keys so she
                     // should be walking)
                     else if (!stationary) {
-                        girlImage = new ImageIcon("0" + girl.count + "_Walk.png").getImage();
+                        girlImage = new ImageIcon("res/0" + girl.count + "_Walk.png").getImage();
                         stationary = true;
                     } else
-                        girlImage = new ImageIcon("00_Walk.png").getImage();
+                        girlImage = new ImageIcon("res/00_Walk.png").getImage();
                     // g.drawImage(girlImage, girl.X, girl.Y, 300, 300, this);
 
                     if (drawPotionDrinkingAnimation) {
@@ -1560,7 +1560,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                             potionAnimationCount++;
                         else
                             drawPotionDrinkingAnimation = false;
-                        girlImage = new ImageIcon("0" + potionAnimationCount + "_DrinkingPotion.png").getImage();
+                        girlImage = new ImageIcon("res/0" + potionAnimationCount + "_DrinkingPotion.png").getImage();
                     }
                     if (girlFacingRight) {
                         BufferedImage flippedImage = flipImage(girlImage);
@@ -1575,14 +1575,14 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                         // if the "attackerAttack" of the attacker1 obj is true then draw the attack
                         // sequence
                         if (attacker1.attackerAttack) {
-                            attackImage = new ImageIcon("0" + attacker1.count + "_Attack_4.png").getImage();
+                            attackImage = new ImageIcon("res/0" + attacker1.count + "_Attack_4.png").getImage();
                             attackImage = flipImage(attackImage);
                         }
                         // otherwise draw the running sequence
                         else
-                            attackImage = new ImageIcon("0" + attacker1.count + "_girlRun.png").getImage();
+                            attackImage = new ImageIcon("res/0" + attacker1.count + "_girlRun.png").getImage();
 
-                        Image healthImage = new ImageIcon("0" + (int) (7 - attacker1.health - 1) + "_healthbar2.png")
+                        Image healthImage = new ImageIcon("res/0" + (int) (7 - attacker1.health - 1) + "_healthbar2.png")
                                 .getImage();
                         g.drawImage(healthImage, attacker1.X + 10, attacker1.Y - 10, iconWidth - 40, iconHeight - 70,
                                 this);
@@ -1769,23 +1769,23 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                     }
                     level3mainCL.show(level3MainPanel, "transition2");
                 }
-                Image bg = new ImageIcon("EmptyBattlefield.png").getImage();
-                Image rightCloseLeftClose = new ImageIcon("RightCloseLeftClose.png").getImage();
-                Image blankMiddleToCoverOld = new ImageIcon("OtherBlankBackground.png").getImage();
+                Image bg = new ImageIcon("res/EmptyBattlefield.png").getImage();
+                Image rightCloseLeftClose = new ImageIcon("res/RightCloseLeftClose.png").getImage();
+                Image blankMiddleToCoverOld = new ImageIcon("res/OtherBlankBackground.png").getImage();
                 g.drawImage(bg, 0, 0, 1400, 860, this);
                g.drawImage(blankMiddleToCoverOld, 0, 0, 1400, 860, this);
                g.drawImage(rightCloseLeftClose, 500, 400, (int)(616/1.5), (int)(405/1.5), this);
-                Image girlImage = new ImageIcon("0" + girlWalkCount + "_Walk.png").getImage();
+                Image girlImage = new ImageIcon("res/0" + girlWalkCount + "_Walk.png").getImage();
                 if (movingRight)
                     girlImage = flipImage(girlImage);
                 g.drawImage(girlImage, girlXAfterAttackerDies, girlYAfterAttackerDies, 200, 200, this);
-                Image attackerImage = new ImageIcon("0" + (dyingAnimationCount) + "_AttackerDead.png").getImage();
-                Image explosionImage = new ImageIcon("Explosion_" + (playExplosionCount) + ".png").getImage();
+                Image attackerImage = new ImageIcon("res/0" + (dyingAnimationCount) + "_AttackerDead.png").getImage();
+                Image explosionImage = new ImageIcon("res/Explosion_" + (playExplosionCount) + ".png").getImage();
                 if(makeImgBigger ) {
                     widthIncCount+=50;
                 }
                 g.drawImage(attackerImage, attackerXAfterAttackerDies, attackerYAfterAttackerDies, girlDyingImgWidth+widthIncCount, attackerDyingImgHeight+widthIncCount, this);
-                Image endingScene1 = new ImageIcon("EndingScene1.png").getImage();
+                Image endingScene1 = new ImageIcon("res/EndingScene1.png").getImage();
                 if (showScene1){
                     g.drawImage(endingScene1, attackerXAfterAttackerDies + 90, attackerYAfterAttackerDies - 70, 768 / 3,
                             672 / 3, this);
@@ -1796,19 +1796,19 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 if(showScene3){
 
                 }
-                    // Image endingScene2 = new ImageIcon("EndingScene2.png").getImage();
+                    // Image endingScene2 = new ImageIcon("res/EndingScene2.png").getImage();
                 // if (showScene2)
                 //     g.drawImage(endingScene2, attackerXAfterAttackerDies + 90, attackerYAfterAttackerDies - 70, 768 / 3,
                 //             672 / 3, this);
-                Image endingScene3 = new ImageIcon("EndingScene3.png").getImage();
+                Image endingScene3 = new ImageIcon("res/EndingScene3.png").getImage();
                 if (showScene4)
                     g.drawImage(endingScene3, girlXAfterAttackerDies + 110, girlYAfterAttackerDies - 90, 768 / 3,
                             672 / 3, this);
-                Image endingScene4 = new ImageIcon("EndingScene4.png").getImage();
+                Image endingScene4 = new ImageIcon("res/EndingScene4.png").getImage();
                 if (showScene5)
                     g.drawImage(endingScene4, girlXAfterAttackerDies + 110, girlYAfterAttackerDies - 90, 768 / 3,
                             672 / 3, this);
-                Image portal = new ImageIcon("GroundPortal.png").getImage();
+                Image portal = new ImageIcon("res/GroundPortal.png").getImage();
                 if (showPortal) {
                     g.drawImage(portal, 900, 300, 500, 500, this);
                 }
@@ -1930,12 +1930,12 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
         Timer tt;
         // constructor for ending scene
         public Transition2() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-            //File audioFile = new File("HomeScreenAudio.wav");
+            //File audioFile = new File("res/HomeScreenAudio.wav");
             HomePage.clip.stop();
             try {
                 // Load the sound clip from a file
                 Clip clip2 = AudioSystem.getClip();
-                clip2.open(AudioSystem.getAudioInputStream(new File("WinMusic.wav")));
+                clip2.open(AudioSystem.getAudioInputStream(new File("res/WinMusic.wav")));
 
                 // Play the sound clip
                 clip2.start();
@@ -1948,9 +1948,9 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
 
         //paintcomponent draws the haunted library gif and confetti
         public void paintComponent(Graphics g) {
-            Image backToHauntedLibrary = new ImageIcon("HauntedLibraryAfter.gif").getImage();
+            Image backToHauntedLibrary = new ImageIcon("res/HauntedLibraryAfter.gif").getImage();
             g.drawImage(backToHauntedLibrary, 0, 0, 1400, 860, this);
-            Image confetti = new ImageIcon("confetti.gif").getImage();
+            Image confetti = new ImageIcon("res/confetti.gif").getImage();
             if(count==100){
                 g.drawImage(confetti, 0, 0, 600, 600, this);
                 g.drawImage(confetti, 600, 0, 600, 600, this);
@@ -1976,7 +1976,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
         try {
             // Load the sound clip from a file
             Clip clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+            clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
             // Play the sound clip
             clip.start();
@@ -2014,9 +2014,9 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
         // paintcomponent draws all the visual components of deathscreen
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            Image bg = new ImageIcon("red.gif").getImage();
+            Image bg = new ImageIcon("res/red.gif").getImage();
             g.drawImage(bg, 0, 0, 1400, 900, this);
-            Image youdied = new ImageIcon("YouDied.png").getImage();
+            Image youdied = new ImageIcon("res/YouDied.png").getImage();
             g.drawImage(youdied, 0, 0, 1400, 900, this);
         }
 
@@ -2052,7 +2052,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
         try {
             // Load the sound clip from a file
             Clip clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+            clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
     
             // Play the sound clip
             clip.start();
@@ -2063,7 +2063,7 @@ Image blankMiddleToCoverOld = new ImageIcon("BlankBackground.png").getImage();
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
                     // Play the sound clip
                     clip.start();

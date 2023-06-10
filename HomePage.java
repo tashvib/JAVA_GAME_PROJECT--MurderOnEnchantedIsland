@@ -42,7 +42,7 @@ class HomePage extends JPanel {
         // HomeScreenAudio constructor intiliatizes the clip variable and opens and
         // starts playing the clip
         public HomeScreenAudio() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-            File audioFile = new File("HomeScreenAudio.wav");
+            File audioFile = new File("res/HomeScreenAudio.wav");
             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
             clip = AudioSystem.getClip();
             clip.open(audioStream);
@@ -73,7 +73,7 @@ class HomePage extends JPanel {
         mainPanel.add(map, "mapPanel");
         mainPanel.add(level2Pan, "level2"); //delete this later
         mainPanel.add(level3Pan, "level3"); //delete this later
-        cl.show(mainPanel, "level1"); //delete this later
+        cl.show(mainPanel, "lavaAnimation"); //delete this later
 
     }
 
@@ -86,19 +86,19 @@ class HomePage extends JPanel {
             paintCount++;
 
             // background of island
-            Image HomePageBackground = new ImageIcon("HomePageBackground.jpg").getImage();
+            Image HomePageBackground = new ImageIcon("res/HomePageBackground.jpg").getImage();
             g.drawImage(HomePageBackground, 0, 0, 1400, 890, this);
 
             // explosion gif
-            Image explosion = new ImageIcon("Explosion.gif").getImage();
+            Image explosion = new ImageIcon("res/Explosion.gif").getImage();
             g.drawImage(explosion, 580, -40, 290, 270, this);
 
             // lava drip at the mouth of the island/volcano
-            Image lavaDrip = new ImageIcon("LavaDrip.gif").getImage();
+            Image lavaDrip = new ImageIcon("res/LavaDrip.gif").getImage();
             g.drawImage(lavaDrip, 640, 90, 180, 180, this);
 
             // lava driping down the island/volcano
-            Image lavaDripDown = new ImageIcon("LavaDripDown2.gif").getImage();
+            Image lavaDripDown = new ImageIcon("res/LavaDripDown2.gif").getImage();
             g.drawImage(lavaDripDown, 400, 170, 700, 600, this);
             if (paintCount == 35) { // waits for 50 paintComponent calls before switching panels
                                     // note that paintComponent is only called continuously in this case bc it is
@@ -137,19 +137,19 @@ class HomePage extends JPanel {
 
         //paintcomponet draws the visual components of the map
         public void paintComponent(Graphics g){
-            Image map = new ImageIcon("mapimg.png").getImage();
+            Image map = new ImageIcon("res/mapimg.png").getImage();
             g.drawImage(map, 0, 0, 1400, 860, this);
 
             if(drawCem){
-                Image mapCem = new ImageIcon("mapimgcemetery.png").getImage();
+                Image mapCem = new ImageIcon("res/mapimgcemetery.png").getImage();
                 g.drawImage(mapCem, 0, 0, 1400, 860, this);
             }
             if(drawForest){
-                Image mapFor = new ImageIcon("mapimgforest.png").getImage();
+                Image mapFor = new ImageIcon("res/mapimgforest.png").getImage();
                 g.drawImage(mapFor, 0, 0, 1400, 860, this);
             }
             if(drawOtherForest){
-                Image mapFor = new ImageIcon("mapimgotherforest.png").getImage();
+                Image mapFor = new ImageIcon("res/mapimgotherforest.png").getImage();
                 g.drawImage(mapFor, 0, 0, 1400, 860, this);
             }
 
@@ -248,10 +248,10 @@ class HomePage extends JPanel {
 
             double thing = (getHeight() * ((double) ((double) (50) / (double) (getHeight()))));
             int thing2 = (int) (thing);
-            Image HomePageBackground = new ImageIcon("HomePageBackground.jpg").getImage();
+            Image HomePageBackground = new ImageIcon("res/HomePageBackground.jpg").getImage();
             g.drawImage(HomePageBackground, 0, 0, 1400, getHeight() + (thing2), this);
 
-            Image lavaDrip = new ImageIcon("LavaDrip.gif").getImage();
+            Image lavaDrip = new ImageIcon("res/LavaDrip.gif").getImage();
             g.drawImage(lavaDrip, 640, 90, 180, 180, this);
         }
     }
@@ -284,29 +284,29 @@ class HomePage extends JPanel {
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             int screenWidth = (int) screenSize.getWidth();
 
-            Image centerPanelBg = new ImageIcon("CenterPanelBg.png").getImage();
+            Image centerPanelBg = new ImageIcon("res/CenterPanelBg.png").getImage();
             g.drawImage(centerPanelBg, 0, 0, 800, getHeight(), this);
 
-            Image lavaDripDown = new ImageIcon("LavaDripDown2.gif").getImage();
+            Image lavaDripDown = new ImageIcon("res/LavaDripDown2.gif").getImage();
             g.drawImage(lavaDripDown, 30, 0, 850, 600, this);
 
-            Image level1Image = new ImageIcon("Level1Button.png").getImage();
+            Image level1Image = new ImageIcon("res/Level1Button.png").getImage();
             if (makeLevel1ButtonBigger) {
                 g.drawImage(level1Image, 260 - ((385 - 345) / 2), -90 - ((385 - 345) / 2), 385, 385, this);
             } else
                 g.drawImage(level1Image, 260, -90, 345, 345, this);
 
                 Image level2Image;
-            if(level12Unlocked) level2Image = new ImageIcon("Level2Button.png").getImage();
-            else level2Image = new ImageIcon("LockedLevel2Button.png").getImage();
+            if(level12Unlocked) level2Image = new ImageIcon("res/Level2Button.png").getImage();
+            else level2Image = new ImageIcon("res/LockedLevel2Button.png").getImage();
             if (makeLevel2ButtonBigger) {
                 g.drawImage(level2Image, 260 - ((385 - 345) / 2), 50 - ((385 - 345) / 2), 385, 385, this);
             } else
                 g.drawImage(level2Image, 260, 50, 345, 345, this);
 
             Image level3Image;
-            if(level123Unlocked) level3Image = new ImageIcon("Level3Button.png").getImage();
-            else level3Image = new ImageIcon("LockedLevel3Button.png").getImage();
+            if(level123Unlocked) level3Image = new ImageIcon("res/Level3Button.png").getImage();
+            else level3Image = new ImageIcon("res/LockedLevel3Button.png").getImage();
             if (makeLevel3ButtonBigger) {
                 g.drawImage(level3Image, 260 - ((385 - 345) / 2), 190 - ((385 - 345) / 2), 385, 385, this);
             } else
@@ -331,7 +331,7 @@ class HomePage extends JPanel {
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
                     // Play the sound clip
                     clip.start();
                 } catch (Exception ex) {
@@ -354,7 +354,7 @@ class HomePage extends JPanel {
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
                     // Play the sound clip
                     clip.start();
                 } catch (Exception ex) {
@@ -376,7 +376,7 @@ class HomePage extends JPanel {
                 try {
                     // Load the sound clip from a file
                     Clip clip = AudioSystem.getClip();
-                    clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+                    clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
                     // Play the sound clip
                     clip.start();
                 } catch (Exception ex) {
@@ -450,7 +450,7 @@ class HomePage extends JPanel {
         // draws a gif of the gametitle
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            Image gameTitleGif = new ImageIcon("GameTitle2.png").getImage();
+            Image gameTitleGif = new ImageIcon("res/GameTitle2.png").getImage();
             g.drawImage(gameTitleGif, -2, 0, 1405, 255, this);
         }
     }
@@ -481,34 +481,34 @@ class HomePage extends JPanel {
         public Image returnImage() {
             switchPanelCount2++;
             if (switchPanelCount2 == 1) {
-                Image dyingGirl = new ImageIcon("00_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/00_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 2) {
-                Image dyingGirl = new ImageIcon("01_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/01_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 3) {
-                Image dyingGirl = new ImageIcon("02_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/02_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 4) {
-                Image dyingGirl = new ImageIcon("03_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/03_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 5) {
-                Image dyingGirl = new ImageIcon("04_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/04_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 6) {
-                Image dyingGirl = new ImageIcon("05_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/05_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 7) {
-                Image dyingGirl = new ImageIcon("06_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/06_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 8) {
-                Image dyingGirl = new ImageIcon("07_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/07_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 9) {
-                Image dyingGirl = new ImageIcon("08_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/08_Dead.png").getImage();
                 return (dyingGirl);
             } else if (switchPanelCount2 == 10) {
-                Image dyingGirl = new ImageIcon("09_Dead.png").getImage();
+                Image dyingGirl = new ImageIcon("res/09_Dead.png").getImage();
                 switchPanelCount2 = 0;
                 return (dyingGirl);
             }
@@ -521,7 +521,7 @@ class HomePage extends JPanel {
         // girl dying
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
-            Image bg = new ImageIcon("BottomBackground.png").getImage();
+            Image bg = new ImageIcon("res/BottomBackground.png").getImage();
             g.drawImage(bg, 0, 0, 1400, 180, this);
 
             if (kill == true)
@@ -529,75 +529,75 @@ class HomePage extends JPanel {
 
             else {
                 if (switchPanelCount == 1) {
-                    Image runningGirl = new ImageIcon("00_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/00_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("01_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/01_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 2) {
-                    Image runningGirl = new ImageIcon("01_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/01_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("02_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/02_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 3) {
-                    Image runningGirl = new ImageIcon("02_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/02_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("03_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/03_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 4) {
-                    Image runningGirl = new ImageIcon("03_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/03_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("04_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/04_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 5) {
-                    Image runningGirl = new ImageIcon("04_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/04_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("05_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/05_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 6) {
-                    Image runningGirl = new ImageIcon("05_girlRun.png").getImage();
+                    Image runningGirl = new ImageIcon("res/05_girlRun.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("06_Run8.png").getImage();
+                    Image runningGuy = new ImageIcon("res/06_Run8.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 7) {
-                    Image runningGirl = new ImageIcon("00_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/00_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("00_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/00_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 8) {
-                    Image runningGirl = new ImageIcon("01_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/01_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("01_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/01_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 9) {
-                    Image runningGirl = new ImageIcon("02_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/02_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("02_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/02_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 10) {
-                    Image runningGirl = new ImageIcon("03_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/03_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("03_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/03_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 11) {
-                    Image runningGirl = new ImageIcon("04_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/04_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("04_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/04_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (switchPanelCount == 12) {
-                    Image runningGirl = new ImageIcon("05_Run.png").getImage();
+                    Image runningGirl = new ImageIcon("res/05_Run.png").getImage();
                     g.drawImage(runningGirl, dudeX, -45, 256, 256, this);
-                    Image runningGuy = new ImageIcon("04_Attack_1.png").getImage();
+                    Image runningGuy = new ImageIcon("res/04_Attack_1.png").getImage();
                     g.drawImage(runningGuy, dudeX - 130, -45, 256, 256, this);
                 }
                 if (timerPaint) {

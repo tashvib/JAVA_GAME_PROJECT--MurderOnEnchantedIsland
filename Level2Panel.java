@@ -64,7 +64,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("01_Transition.gif").getImage();
+                Image bg = new ImageIcon("res/01_Transition.gif").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
         }
@@ -80,7 +80,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("02_Transition.png").getImage();
+                Image bg = new ImageIcon("res/02_Transition.png").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
         }
@@ -96,7 +96,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("03_Transition.png").getImage();
+                Image bg = new ImageIcon("res/03_Transition.png").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
         }
@@ -111,7 +111,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("04_Transition.gif").getImage();
+                Image bg = new ImageIcon("res/04_Transition.gif").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
 
@@ -153,7 +153,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("05_Transition.gif").getImage();
+                Image bg = new ImageIcon("res/05_Transition.gif").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
 
@@ -193,7 +193,7 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("06_Transition.gif").getImage();
+                Image bg = new ImageIcon("res/06_Transition.gif").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
             }
 
@@ -233,9 +233,9 @@ public class Level2Panel extends JPanel implements MouseListener {
 
             // this paintcomponent draws the image for the story explanation
             public void paintComponent(Graphics g) {
-                Image bg = new ImageIcon("07_Transition.gif").getImage();
+                Image bg = new ImageIcon("res/07_Transition.gif").getImage();
                 g.drawImage(bg, 0, 0, 1400, 900, this);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 760, 150, 100, this);
             }
 
@@ -278,7 +278,7 @@ public class Level2Panel extends JPanel implements MouseListener {
             // this paintComponent method draws the next arrow button
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
             }
 
@@ -334,7 +334,7 @@ public class Level2Panel extends JPanel implements MouseListener {
             }
             //paints the bg image that contains the graphics for plot explanantion
             public void paintComponent(Graphics g){
-                Image foundMe = new ImageIcon("FoundMe.png").getImage();
+                Image foundMe = new ImageIcon("res/FoundMe.png").getImage();
                 g.drawImage(foundMe, 0, 0, 1400, 860, this);
             }
 
@@ -355,11 +355,11 @@ public class Level2Panel extends JPanel implements MouseListener {
             public void paintComponent(Graphics g){
                 super.paintComponent(g);
                 if(girlCount<=8) girlCount--;
-                Image foundMe = new ImageIcon("EmptyFoundMe.png").getImage();
+                Image foundMe = new ImageIcon("res/EmptyFoundMe.png").getImage();
                 g.drawImage(foundMe, 0, 0, 1400, 860, this);
-                Image girlDying = new ImageIcon("0" + girlCount + "_GirlDead.png").getImage();
+                Image girlDying = new ImageIcon("res/0" + girlCount + "_GirlDead.png").getImage();
                 g.drawImage(girlDying, 640, 500, 350, 350, this);
-                Image guyDying = new ImageIcon("0" + girlCount + "_GuyDead.png").getImage();
+                Image guyDying = new ImageIcon("res/0" + girlCount + "_GuyDead.png").getImage();
                 g.drawImage(guyDying, 500, 500, 350, 350, this);
                 
                
@@ -379,7 +379,7 @@ public class Level2Panel extends JPanel implements MouseListener {
             }
             //paints the bg image that contains the graphics for plot explanantion
             public void paintComponent(Graphics g){
-                Image foundMe = new ImageIcon("YOUMURDERER.png").getImage();
+                Image foundMe = new ImageIcon("res/YOUMURDERER.png").getImage();
                 g.drawImage(foundMe, 0, 0, 1400, 860, this);
             }
 
@@ -395,7 +395,7 @@ public class Level2Panel extends JPanel implements MouseListener {
             //paints the bg image that contains the graphics for plot explanantion
             public void paintComponent(Graphics g){
                 showingLastPanel=true;
-                Image foundMe = new ImageIcon("CongratsPanel.png").getImage();
+                Image foundMe = new ImageIcon("res/CongratsPanel.png").getImage();
                 g.drawImage(foundMe, 0, 0, 1400, 860, this);
             }
 
@@ -415,7 +415,7 @@ public class Level2Panel extends JPanel implements MouseListener {
             // this paintComponent method draws the next arrow button
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                 g.drawImage(nextArrButton, 1250, 100, 150, 100, this);
             }
 
@@ -454,7 +454,7 @@ public class Level2Panel extends JPanel implements MouseListener {
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout(FlowLayout.RIGHT));
         panel.setBackground(new Color(0, 0, 0, 0));
-        Image img = Toolkit.getDefaultToolkit().getImage("QuitButton.png");
+        Image img = Toolkit.getDefaultToolkit().getImage("res/QuitButton.png");
         Image img2 = img.getScaledInstance(200, 150, Image.SCALE_SMOOTH);
         ImageIcon buttonIcon = new ImageIcon(img2);
         JLabel quit = new JLabel(buttonIcon);
@@ -474,7 +474,7 @@ public class Level2Panel extends JPanel implements MouseListener {
         try {
             // Load the sound clip from a file
             Clip clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+            clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
             // Play the sound clip
             clip.start();
@@ -714,23 +714,23 @@ int circleCount=0;
             // Get the Graphics2D object from the BufferedImage
             Graphics2D g2d = bufferedImageArray[i].createGraphics();
             if(i==4){
-                Image bg1 = new ImageIcon("platformerBg1.png").getImage();
+                Image bg1 = new ImageIcon("res/platformerBg1.png").getImage();
                     g2d.drawImage(bg1, 0, 0, width, height, this);
-                Image hostage = new ImageIcon("Hostage.png").getImage();
+                Image hostage = new ImageIcon("res/Hostage.png").getImage();
                     g2d.drawImage(hostage, 0, 300, 1000, 550, this);
-                Image nextArrButton = new ImageIcon("NextArrowButton.png").getImage();
+                Image nextArrButton = new ImageIcon("res/NextArrowButton.png").getImage();
                     g2d.drawImage(nextArrButton, 1250, 730, 150, 100, this);
             }
             else{
                 if (i % 2 == 0) {
                     // g2d.setColor(Color.BLUE);
                     // g2d.fillRect(0, 0, LEVEL_WIDTH, LEVEL_HEIGHT);
-                    Image bg1 = new ImageIcon("platformerBg1.png").getImage();
+                    Image bg1 = new ImageIcon("res/platformerBg1.png").getImage();
                     g2d.drawImage(bg1, 0, 0, width, height, this);
                 } else if (i % 2 == 1) {
                     // g2d.setColor(Color.YELLOW);
 
-                    Image bg2 = new ImageIcon("platformerBg2.png").getImage();
+                    Image bg2 = new ImageIcon("res/platformerBg2.png").getImage();
                     g2d.drawImage(bg2, 0, 0, width, height, this);
                 } else
                     g2d.setColor(Color.RED);
@@ -874,19 +874,19 @@ int circleCount=0;
 
             // creates obstacles
             obstacles = new GameObject[100];
-            Image stoneImage = new ImageIcon("Tile_43.png").getImage();
-            Image stoneTile= new ImageIcon("stoneTile.png").getImage();
-            Image stoneImageFlip = new ImageIcon("triangleFlip.png").getImage();
+            Image stoneImage = new ImageIcon("res/Tile_43.png").getImage();
+            Image stoneTile= new ImageIcon("res/stoneTile.png").getImage();
+            Image stoneImageFlip = new ImageIcon("res/triangleFlip.png").getImage();
 
-            Image tileImage = new ImageIcon("Tile_39.png").getImage();
-            Image spikeTileImage = new ImageIcon("spikeTile.png").getImage();
-            Image otherimage = new ImageIcon("othertile.png").getImage();
-            Image fill = new ImageIcon("scatteredBlueTile.png").getImage();
-            // Image redtreasureChestUnscaled = new ImageIcon("RedtreasureChest.png").getImage();
+            Image tileImage = new ImageIcon("res/Tile_39.png").getImage();
+            Image spikeTileImage = new ImageIcon("res/spikeTile.png").getImage();
+            Image otherimage = new ImageIcon("res/othertile.png").getImage();
+            Image fill = new ImageIcon("res/scatteredBlueTile.png").getImage();
+            // Image redtreasureChestUnscaled = new ImageIcon("res/RedtreasureChest.png").getImage();
             // Image redtreasureChest = redtreasureChestUnscaled.getScaledInstance(20, 20, Image.SCALE_SMOOTH);
-            Image redtreasureChest = new ImageIcon("treasure1.png").getImage();
+            Image redtreasureChest = new ImageIcon("res/treasure1.png").getImage();
 
-            Image greentreasureChest = new ImageIcon("GreentreasureChest.png").getImage();
+            Image greentreasureChest = new ImageIcon("res/GreentreasureChest.png").getImage();
 
             for (int i = 0; i < obstacles.length; i++) {
                 obstacles[i] = new GameObject(new Rectangle((i + 1) * 11900, getHeight() - STONE_HEIGHT,
@@ -1159,9 +1159,9 @@ int circleCount=0;
         // Draw player
 
         if (jump) {
-            playerImage = new ImageIcon("0" + jumpCount + "_Jump.png").getImage();
+            playerImage = new ImageIcon("res/0" + jumpCount + "_Jump.png").getImage();
         } else
-            playerImage = new ImageIcon("0" + count + "_Walk.png").getImage();
+            playerImage = new ImageIcon("res/0" + count + "_Walk.png").getImage();
 
         int playerDrawPosition = player.outerBox.x1;
         if (player.outerBox.x1 > frameLimit)
@@ -1227,9 +1227,9 @@ int circleCount=0;
             timer.start();
         }
 
-        Image objectsToFind = new ImageIcon("treasureNotFound.png").getImage();
-        Image found = new ImageIcon("treasureIcon.png").getImage();
-        Image circle = new ImageIcon("glowingCircle.png").getImage();
+        Image objectsToFind = new ImageIcon("res/treasureNotFound.png").getImage();
+        Image found = new ImageIcon("res/treasureIcon.png").getImage();
+        Image circle = new ImageIcon("res/glowingCircle.png").getImage();
         if(circleCount<=15) circleCount++;
         if(!Level2Panel.treasureChestGained) g.drawImage(objectsToFind, 1200, 0, 200, 200, this);
         else {
@@ -1364,9 +1364,9 @@ int circleCount=0;
     // paintcomponent draws all the visual components of deathscreen
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
-        Image bg = new ImageIcon("red.gif").getImage();
+        Image bg = new ImageIcon("res/red.gif").getImage();
         g.drawImage(bg, 0, 0, 1400, 900, this);
-        Image youdied = new ImageIcon("YouDied.png").getImage();
+        Image youdied = new ImageIcon("res/YouDied.png").getImage();
         g.drawImage(youdied, 0, 0, 1400, 900, this);
     }
     // mousePRessed determines what to do if mouse is pressed
@@ -1400,7 +1400,7 @@ HomePage.level12Unlocked=true;
     try {
         // Load the sound clip from a file
         Clip clip = AudioSystem.getClip();
-        clip.open(AudioSystem.getAudioInputStream(new File("ButtonClick.wav")));
+        clip.open(AudioSystem.getAudioInputStream(new File("res/ButtonClick.wav")));
 
         // Play the sound clip
         clip.start();
