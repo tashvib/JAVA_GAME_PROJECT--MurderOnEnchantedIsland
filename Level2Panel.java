@@ -15,7 +15,7 @@ public class Level2Panel extends JPanel implements MouseListener {
     static CardLayout level2mainCL;
     static JPanel level2MainPanel;
     DeathScreen2 deathScreen;
-    public static boolean treasureChestGained=true;
+    public static boolean treasureChestGained=false;
 
     // constructor for this class sets the layout and adds the quit button to the
     // top using borderLayout
