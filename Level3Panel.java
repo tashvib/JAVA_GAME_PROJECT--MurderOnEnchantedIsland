@@ -585,8 +585,8 @@ for(int i = 0; i<heartArr.size(); i++){
 
 
             //checking if girl's position fits on the left button
-            if (girl.X >= 0 - xOffset && girl.X <= 100 - xOffset && girl.Y >= 487 - yOffset
-                    && girl.Y <= 570 - yOffset) {
+            if (girl.X >=-90 && girl.X <= 30 && girl.Y >= 360
+                    && girl.Y <= 520) {
                 timeOnLeftButton++;//if so we start increasing the counter that counts the amt of time on the left button
             } else
                 timeOnLeftButton = 0;
